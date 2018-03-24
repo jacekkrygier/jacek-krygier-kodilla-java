@@ -19,7 +19,7 @@ public class StreamMain {
         poemBeautifier.beautify("jacek krygier", BeautifyingMethods::addEmo);
         poemBeautifier.beautify("JaCek KryGier", (text -> text.toLowerCase()));
 
-        //Zadanie 6.3
+        //Zadanie 7.3
         Forum forum = new Forum();
         Map<Integer, ForumUser> theResultMapOfForumUsers = forum.getList().stream()
                 .filter(forumUser -> forumUser.getSex() == 'M')
