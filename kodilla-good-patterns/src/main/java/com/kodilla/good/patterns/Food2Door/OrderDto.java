@@ -1,4 +1,4 @@
-package com.kodilla.good.patterns.challenges;
+package com.kodilla.good.patterns.Food2Door;
 
 public class OrderDto {
     private Customer customer;
@@ -25,4 +25,3 @@ public class OrderDto {
                 '}';
     }
 }
-
