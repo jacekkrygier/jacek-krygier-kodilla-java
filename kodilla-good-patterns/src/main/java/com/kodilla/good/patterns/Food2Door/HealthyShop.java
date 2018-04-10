@@ -8,8 +8,9 @@ public class HealthyShop implements Shop {
     }
 
     public void process(Product product) {
-        System.out.println("You have just bought "  + product.getQuantity() + " quantity of " + product.getName() + " for " + product.getPrice() + " each. Thank you for using HealthyShop");
-
+        System.out.println("You have just bought "  + product.getQuantity() + " quantity of " + product.getName() + " for " + product.getPrice() + " each. Now we are checking availability.");
+        Storage storage = new HealthyShopStorage();
+        storage.checkAvailability(product);
     }
 
     public String getName() {

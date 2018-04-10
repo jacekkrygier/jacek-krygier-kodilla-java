@@ -8,8 +8,9 @@ public class GlutenFreeShop implements Shop {
     }
 
     public void process(Product product) {
-        System.out.println("You have just bought "  + product.getQuantity() + " quantity of " + product.getName() + " for " + product.getPrice() + " each. Thank you for using GlutenFreeShop");
-
+        System.out.println("You have just bought "  + product.getQuantity() + " quantity of " + product.getName() + " for " + product.getPrice() + " each. Now we are checking availability.");
+        Storage storage = new GlutenFreeShopStorage();
+        storage.checkAvailability(product);
     }
 
     public String getName() {
@@ -18,7 +19,7 @@ public class GlutenFreeShop implements Shop {
 
     @Override
     public String toString() {
-        return "EGlutenFreeShop{" +
+        return "GlutenFreeShop{" +
                 "name='" + name + '\'' +
                 '}';
     }
