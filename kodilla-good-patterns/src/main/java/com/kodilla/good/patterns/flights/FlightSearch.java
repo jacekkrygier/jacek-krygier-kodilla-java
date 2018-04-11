@@ -19,11 +19,18 @@ public class FlightSearch {
                 .forEach(System.out::println);
     }
 
-    public static void searchByConnectingCity(String airport) {
-        System.out.println("You are looking for flights through the: " + airport + ". Here are the results:");
+    public static void searchByConnectingCity(String arrivalAirport, String connectingCity) {
+        System.out.println("You are looking for flights through the: " + connectingCity + " to " + arrivalAirport + ". First, choose one of these flights: ");
         FlightCollection.getFlightList().stream()
-                .filter(flight -> flight.getConnectingCity() !=null)
-                .filter(flight -> flight.getConnectingCity().equals(airport))
+                .filter(flight -> flight.getDepartureAirport() != arrivalAirport)
+                .filter(flight -> flight.getArrivalAirport().equals(connectingCity))
+                .forEach(System.out::println);
+
+        System.out.println("Then, choose this flight:");
+
+        FlightCollection.getFlightList().stream()
+                .filter(flight -> flight.getDepartureAirport().equals(connectingCity))
+                .filter(flight -> flight.getArrivalAirport().equals(arrivalAirport))
                 .forEach(System.out::println);
     }
 }

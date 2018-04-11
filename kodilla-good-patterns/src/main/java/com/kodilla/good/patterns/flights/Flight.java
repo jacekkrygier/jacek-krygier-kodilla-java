@@ -3,17 +3,11 @@ package com.kodilla.good.patterns.flights;
 public final class Flight {
     private final String departureAirport;
     private final String arrivalAirport;
-    private  String connectingCity;
+
 
     public Flight(final String departureAirport, final String arrivalAirport) {
         this.departureAirport = departureAirport;
         this.arrivalAirport = arrivalAirport;
-    }
-
-    public Flight( final String departureAirport, final String arrivalAirport, final String connectingCity) {
-        this.departureAirport = departureAirport;
-        this.arrivalAirport = arrivalAirport;
-        this.connectingCity = connectingCity;
     }
 
     public String getDepartureAirport() {
@@ -24,9 +18,7 @@ public final class Flight {
         return arrivalAirport;
     }
 
-    public String getConnectingCity() {
-        return connectingCity;
-    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -51,7 +43,6 @@ public final class Flight {
         return "Flight{" +
                 "departureAirport='" + departureAirport + '\'' +
                 ", arrivalAirport='" + arrivalAirport + '\'' +
-                ", connectingCity='" + connectingCity + '\'' +
                 '}';
     }
 }

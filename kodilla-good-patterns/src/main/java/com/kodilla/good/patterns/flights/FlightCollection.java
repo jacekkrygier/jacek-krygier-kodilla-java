@@ -8,18 +8,15 @@ public class FlightCollection {
 
 
     public FlightCollection() {
-        flightList.add(new Flight("Gdańsk", "Kraków", "Wrocław"));
-        flightList.add(new Flight("Gdańsk", "Wrocław"));
         flightList.add(new Flight("Gdańsk", "Kraków"));
-        flightList.add(new Flight("Gdańsk", "Warszawa", "Wrocław"));
+        flightList.add(new Flight("Gdańsk", "Wrocław"));
+        flightList.add(new Flight("Gdańsk", "Warszawa"));
         flightList.add(new Flight("Warszawa", "Gdańsk"));
         flightList.add(new Flight("Warszawa", "Kraków"));
-        flightList.add(new Flight("Warszawa", "Wrocław", "Kraków"));
-        flightList.add(new Flight("Kraków", "Gdańsk", "Warszawa"));
+        flightList.add(new Flight("Warszawa", "Wrocław"));
         flightList.add(new Flight("Kraków", "Gdańsk"));
-        flightList.add(new Flight("Kraków", "Wrocław", "Warszawa"));
-        flightList.add(new Flight("Kraków", "Warszawa", "Wrocław"));
-        flightList.add(new Flight("Wrocław", "Gdańsk", "Warszawa"));
+        flightList.add(new Flight("Kraków", "Wrocław"));
+        flightList.add(new Flight("Kraków", "Warszawa"));
         flightList.add(new Flight("Wrocław", "Gdańsk"));
         flightList.add(new Flight("Wrocław", "Warszawa"));
     }
