@@ -8,6 +8,6 @@ public class FlightSearchApplication {
 
         flightSearch.searchByArrivalAirport("Warszawa");
         flightSearch.searchByDepartureAirport("Kraków");
-        flightSearch.searchByConnectingCity("Gdańsk", "Warszawa");
+        flightSearch.searchByConnectingCity("Kraków", "Warszawa", "Gdańsk");
     }
 }
