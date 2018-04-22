@@ -4,6 +4,9 @@ public class Logger {
     private String lastLog = "";
     private static Logger loggerInstance = null;
 
+    private Logger () {
+    }
+
     public static Logger getInstance() {
         if (loggerInstance == null) {
             synchronized(Logger.class) {
