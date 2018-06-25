@@ -94,7 +94,7 @@ public class CompanyDaoTestSuite {
         companyDao.save(greyMatter);
 
         //When
-        List<Employee> retrievedEmployees = employeeDao.retrieveEmployeesByLastame("Kovalsky");
+        List<Employee> retrievedEmployees = employeeDao.retrieveEmployeesByLastname("Kovalsky");
         List<Company> retrievedCompanies = companyDao.retrieveCompaniesByPhrase("Dat");
 
 

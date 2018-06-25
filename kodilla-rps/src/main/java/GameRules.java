@@ -13,11 +13,11 @@ public class GameRules {
         return gamerName;
     }
 
-    public  int setNumberOfRounds(){
+    public  int setNumberOfWins(){
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter number of rounds, please: ");
-        int numberOfRounds = scanner.nextInt();
-        return numberOfRounds;
+        System.out.print("Enter number of wins required, please: ");
+        int numberOfWins = scanner.nextInt();
+        return numberOfWins;
     }
 
     public String getGamerName() {

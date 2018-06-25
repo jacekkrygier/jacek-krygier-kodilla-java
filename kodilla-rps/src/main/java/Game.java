@@ -15,7 +15,7 @@ public class Game {
 
     public void startGame(GameRules gameRules) {
         gamer = gameRules.setGamer();
-        int finalRounds = gameRules.setNumberOfRounds();
+        int finalRounds = gameRules.setNumberOfWins();
 
         while(!end){
             if(turn == finalRounds){

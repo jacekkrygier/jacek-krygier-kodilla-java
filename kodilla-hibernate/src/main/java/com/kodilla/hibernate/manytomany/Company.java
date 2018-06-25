@@ -11,6 +11,12 @@ import java.util.List;
                 " WHERE COMPANY_NAME LIKE CONCAT('%',:PHRASE,'%')",
         resultClass = Company.class
 )
+
+@NamedQuery(
+        name = "Company.retrieveCompaniesWithNameLike",
+        query = "FROM Company WHERE company_name LIKE :ARG"
+)
+
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
