@@ -1,5 +1,7 @@
 package com.kodilla.jdbc;
 
+
+
 import org.junit.Test;
 
 import java.sql.ResultSet;
@@ -46,7 +48,7 @@ public class StoredProcTestSuite {
         String sqlCheckTable = "SELECT COUNT(*) AS HOW_MANY FROM BOOKS WHERE BESTSELLER=1";
         ResultSet rs = statement.executeQuery(sqlCheckTable);
         int howMany = -1;
-        while (rs.next()) {
+        if (rs.next()) {
             howMany = rs.getInt("HOW_MANY");
         }
         assertEquals(1, howMany);
