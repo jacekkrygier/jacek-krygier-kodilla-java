@@ -36,7 +36,7 @@ public class StoredProcTestSuite {
     @Test
     public void testUpdateBestsellers() throws SQLException {
         DbManager dbManager = DbManager.getInstance();
-        String sqlUpdate = "UPDATE BOOKS SET BESTSELLER=0";
+        String sqlUpdate = "UPDATE BOOKS SET BESTSELLER=-1";
         Statement statement = dbManager.getConnection().createStatement();
         statement.executeUpdate(sqlUpdate);
 
